@@ -1,0 +1,169 @@
+:root {
+  --color-fondo: #fff8f0;
+  --color-texto: #4a2c1a;
+  --color-primario: #e07a3f;
+  --color-primario-oscuro: #c9601f;
+  --color-secundario: #f4a261;
+  --color-acento: #d1495b;
+  --color-alterno: #fdebd3;
+  --fuente: 'Segoe UI', Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: var(--color-primario-oscuro);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.75;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero__content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  opacity: 0.95;
+}
+
+.btn {
+  background-color: #fff;
+  color: var(--color-primario-oscuro);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Secciones */
+.section {
+  padding: 60px 20px;
+}
+
+.section--alt {
+  background-color: var(--color-alterno);
+}
+
+.section h2 {
+  color: var(--color-primario-oscuro);
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid var(--color-secundario);
+  border-radius: 12px;
+  padding: 24px 32px;
+  text-align: center;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: var(--color-acento);
+  margin-bottom: 8px;
+}
+
+/* Docente */
+.docente__nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primario-oscuro);
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-texto);
+  color: #fdebd3;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .header__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .hero__content h1 {
+    font-size: 1.8rem;
+  }
+}
