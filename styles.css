@@ -1,11 +1,11 @@
 :root {
-  --color-fondo: #fff8f0;
-  --color-texto: #4a2c1a;
-  --color-primario: #e07a3f;
-  --color-primario-oscuro: #c9601f;
-  --color-secundario: #f4a261;
-  --color-acento: #d1495b;
-  --color-alterno: #fdebd3;
+  --color-fondo: #ffffff;
+  --color-texto: #3a0a10;
+  --color-primario: #7a1224;
+  --color-primario-oscuro: #5c0d1b;
+  --color-secundario: #b3505f;
+  --color-acento: #8f1d2c;
+  --color-alterno: #f4f0f0;
   --fuente: 'Segoe UI', Verdana, sans-serif;
 }
 
